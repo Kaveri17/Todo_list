@@ -29,8 +29,3 @@ exports.generateToken = async(user)=>{
     return token
 }
 
-// authorization of user
-exports.authorization = expressjwt({
-    secret: process.env.JWT_SECRET,
-    algorithms: ['HS256']
-})
